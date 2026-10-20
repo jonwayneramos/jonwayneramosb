@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Jonwayne M. Ramos, an Information Technology student at Northeastern College.">
+  <title>Jonwayne M. Ramos | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Jonwayne M. Ramos</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">Menu</button>
+    <nav id="navMenu" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="status"><i aria-hidden="true"></i>Open to internships and entry-level roles</p>
+          <h1>IT student focused on computer systems and networking.</h1>
+          <p class="hero-text">I'm studying Information Technology at Northeastern College and building practical skills in computer servicing, network setup, servers, and web styling.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#certificates">View certificates</a>
+            <a class="button secondary" href="assets/resume/resume.pdf" target="_blank" rel="noopener">Open resume</a>
+          </div>
+        </div>
+        <figure class="portrait">
+          <img src="assets/portrait/portrait.jpg" alt="Portrait of Jonwayne M. Ramos" width="720" height="922" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" id="about">
+      <div class="wrap row">
+        <div class="row-head"><h2>About</h2></div>
+        <div class="row-body about">
+          <p class="lead">I'm Jonwayne M. Ramos, a Bachelor of Science in Information Technology student at Northeastern College. I have foundational knowledge of computer systems servicing, network configuration, server setup, and web styling.</p>
+          <p>Outside class, I keep learning through online training and webinars on computer maintenance, Cisco Packet Tracer, CSS, cybersecurity awareness, and Microsoft tools. I want to strengthen my hands-on IT skills and contribute to a team through an internship or entry-level role.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="education">
+      <div class="wrap row">
+        <div class="row-head"><h2>Education</h2></div>
+        <ol class="row-body timeline">
+          <li><h3>Bachelor of Science in Information Technology</h3><p>Northeastern College</p><small>Currently studying</small></li>
+          <li><h3>Senior High School</h3><p>Northeastern College</p><small>Completed 2024</small></li>
+          <li><h3>Junior High School</h3><p>Northeastern College</p><small>Completed 2022</small></li>
+          <li><h3>Elementary</h3><p>Santiago South Central School</p><small>Completed 2018</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band" id="skills">
+      <div class="wrap row">
+        <div class="row-head"><h2>Skills</h2></div>
+        <dl class="row-body skills">
+          <div><dt>Computer systems</dt><dd>Installation, configuration, troubleshooting, and maintenance fundamentals.</dd></div>
+          <div><dt>Networking</dt><dd>Basic network setup and simulation with Cisco Packet Tracer.</dd></div>
+          <div><dt>Servers</dt><dd>Foundational server setup and configuration.</dd></div>
+          <div><dt>Web and programming</dt><dd>CSS fundamentals and introductory C#.</dd></div>
+          <div><dt>Digital tools</dt><dd>Google Workspace, Microsoft Learn modules, and Power BI fundamentals.</dd></div>
+          <div><dt>Cybersecurity awareness</dt><dd>Basic digital safety, threat awareness, and cyber hygiene.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="band wide" id="certificates">
+      <div class="wrap row">
+        <div class="row-head">
+          <h2>Certificates</h2>
+          <p>Courses, training, and webinars I've completed. Each certificate is shown in full size, and you can open or download the original file.</p>
+        </div>
+        <div class="row-body">
+          <div class="filter-bar" id="certificateFilters" role="group" aria-label="Filter certificates"></div>
+          <div id="certificateGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="resume">
+      <div class="wrap row">
+        <div class="row-head"><h2>Resume</h2></div>
+        <div class="row-body resume">
+          <p class="lead">My education, technical skills, training, and certificates on one page.</p>
+          <div class="resume-actions">
+            <a class="button primary" id="resumeDownload" href="assets/resume/resume.pdf" download>Download resume (PDF)</a>
+            <a class="button secondary" href="assets/resume/resume.pdf" target="_blank" rel="noopener">View in browser</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's talk about an internship or entry-level role.</h2>
+      <div class="contact-lines">
+        <div>
+          <p class="contact-label">Email</p>
+          <a class="email-link" href="mailto:ramosjwayne@gmail.com">ramosjwayne@gmail.com</a>
+        </div>
+        <div>
+          <p class="contact-label">Phone</p>
+          <a class="email-link" href="tel:+639659916146">0965 991 6146</a>
+        </div>
+      </div>
+      <div class="foot-meta">
+        <p>Northeastern College, Santiago City, Isabela</p>
+        <p>© 2026 Jonwayne M. Ramos</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
